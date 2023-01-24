@@ -1,0 +1,102 @@
+body{
+    background-color:hsl(233, 8%, 79%) ;
+    display: block;
+}
+
+main{
+   background-color: white;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+header{
+    padding-top: 20px;
+
+}
+
+.topnav{
+    list-style-type: none;
+    float: right;
+    padding-top: 20px;
+}
+
+.topnav a{
+    list-style-type: none;
+    text-decoration: none;
+    color: hsl(233, 8%, 79%);
+    padding: 14px 16px;
+}
+
+.topnav a:hover:not(.active) {
+    color: hsl(35, 77%, 62%);
+}
+
+.topnav a.active {
+    color: hsl(35, 77%, 62%);
+}
+
+.container{
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 10px;
+}
+
+aside{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background-color: hsl(240, 100%, 5%);
+    padding: 20px;
+    color: white;
+}
+
+.row{
+  display: flex;
+  
+}
+
+.partOne{
+    flex: 30%;
+    padding: 10px;
+}
+
+.partTwo{
+    flex: 30%;
+    padding: 10px;
+}
+
+.partThree{
+    flex: 30%;
+    padding: 10px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+      flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+}
+  
