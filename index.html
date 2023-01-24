@@ -1,97 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | News homepage</title>
-  <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 <body>
-  <main>
-    <header>
-      <img src="./assets/images/logo.svg" alt="">
-      <div class="topnav">
-        <a href="http://">Home</a>
-        <a href="http://">New</a>
-        <a href="http://">Popular</a>
-        <a class="active" href="http://">Trending</a>
-        <a href="http://">Categories</a>
-      </div>
-    </header>
+    <div class="container my-5">
 
-    <div class="container">
-      <!-- the second section of the page -->
-      <section>
-        <article>
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="">
-          <div class="row">
-            <div class="article-1">
-              <h1>The Bright Future of Web 3.0?</h1>
+        <nav class="navbar my-5">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/images/logo.svg" alt="logo" width="30" height="24">
+              </a>
+              <ul class="nav justify-content-end">
+                 <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">New</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Popular</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Trending</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#">Categories</a>
+                 </li>
+              </ul>
             </div>
-            <div class="article-2">
-              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-                But is it really fulfilling its promise?
-              </p>
-             <button><a href="http://">Read more</a></button> 
-            </div> 
-          </div>
-        </article>
-        <aside>
-          <div>
-            <h1> New </h1>
-            <h3>Hydrogen VS Electric Cars</h3>
-            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </nav>
+
+        <div class="row">
+            <div class="col-sm-8">
+                <img src="./assets/images/image-web-3-desktop.jpg" class="img-fluid" alt="...">
+              <div class="row">
+                <div class="col-8 col-sm-6">
+                    <h1>The Bright Future of Web 3.0?</h1>
+                </div>
+                <div class="col-4 col-sm-6">
+                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                        But is it really fulfilling its promise?
+                    </p>
+                    <button><a href="http://">Read more</a></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 border bg-dark text-white">
+                <h1> New </h1>
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                
+                <h3>The Downsides of AI Artistry</h3>
+                <p>What are the possible adverse effects of on-demand AI image generation?</p> 
             
-            <h3>The Downsides of AI Artistry</h3>
-            <p>What are the possible adverse effects of on-demand AI image generation?</p> 
-        
-            <h3>Is VC Funding Drying Up?</h3>
-            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>  
-          </div>
-        </aside>
-      </section>
-
-      <!-- the last row of cards -->
-      <div class="row">
-        <div class="partOne">
-          <img src="./assets/images/image-retro-pcs.jpg" alt="">
-          <div>
-            01
-            Reviving Retro PCs
-            What happens when old PCs are given modern upgrades?
-          </div> 
+                <h3>Is VC Funding Drying Up?</h3>
+                <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p> 
+              </div>
         </div>
 
-        <div class="partTwo">
-          <img src="./assets/images/image-top-laptops.jpg" alt="">
-          <div>
-            02
-            Top 10 Laptops of 2022
-            Our best picks for various needs and budgets.
+        <div class="row my-5">
+          <div class="col-sm">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./assets/images/image-retro-pcs.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title text-muted">01</h2>
+                      <h5 class="card-title">Reviving Retro PCs</h5>
+                      <p class="card-text">What happens when old PCs are given modern upgrades?</p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+          </div>
+          <div class="col-sm">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./assets/images/image-top-laptops.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h2 class="card-title text-muted">02</h2>
+                      <h5 class="card-title">Top 10 Laptops of 2022</h5>
+                      <p class="card-text">Our best picks for various needs and budgets.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-sm">
+            <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./assets/images/image-gaming-growth.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title text-muted">03</h2>
+                        <h5 class="card-title">The Growth of Gaming</h5>
+                        <p class="card-text">How the pandemic has sparked fresh opportunities.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
-
-        <div class="partThree">
-          <img src="./assets/images/image-gaming-growth.jpg" alt="">
-          <div>
-            03
-            The Growth of Gaming
-            How the pandemic has sparked fresh opportunities.
-          </div>
-        </div>
-
-      </div>
     </div>
 
-  </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Esther Namaganda</a>.
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Esther Namaganda</a>.
-  </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
