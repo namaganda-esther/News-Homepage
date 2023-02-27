@@ -1,9 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
 
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: block;
+    color: hsl(236, 13%, 42%);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+section{
+    display: flex;
+    display: -webkit-flex;
+}
+
+article{
+    -webkit-flex:3;
+    -ms-flex: 3;
+    flex: 3;
+    padding: 15px;
+}
+
+article img{
+    width: 650px;
+}
+
+nav{
+    -webkit-flex:1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 15px;
+    border: 1px solid;
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+
+.article-content{
+    display: flex;
+    display: -webkit-flex;
+}
+
+.article-content-item1{
+    -webkit-flex:2;
+    -ms-flex: 2;
+   flex: 2;
+   padding: 15px;
+}
+
+.article-content-item1 h1{
+   font-weight: 800;
+}
+
+.article-content-item2{
+    -webkit-flex:2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 15px;
+}
+
+footer{
+    display: flex;
+}
+
+.foorter-item1{
+    padding: 15px;
+}
+
+/* .foorter-item2{
+    padding: 15px;
+}
+
+.foorter-item3{
+    padding: 15px;
+} */
+
 .attribution {
     font-size: 11px; 
     text-align: center; 
-    font-family: 'Inter', sans-serif;
+    padding: 15px;
 }
 
 .attribution a { 
