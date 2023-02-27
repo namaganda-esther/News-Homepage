@@ -65,6 +65,18 @@ nav h1{
     font-size: 40px;
 }
 
+nav h4{
+
+}
+
+nav p{
+    font-size: small;
+    font-weight: 400;
+    color: hsl(36, 100%, 99%);
+    padding-bottom: 20px;
+    opacity: .6;
+}
+
 .article-content{
     display: flex;
     display: -webkit-flex;
@@ -79,7 +91,7 @@ nav h1{
 
 .article-content-item1 h1{
    font-weight: 800;
-   font-size: 55px;
+   font-size: 45px;
 }
 
 .article-content-item2{
@@ -92,7 +104,7 @@ nav h1{
 button{
     background-color: hsl(5, 85%, 63%);
     width: 30%;
-    height: 15%;
+    height: 20%;
     border: none;
 }
 
@@ -104,6 +116,7 @@ button a{
 
 footer{
     display: flex;
+    display: -webkit-flex;
     padding-top: 30px;
     align-items: center;
 }
@@ -111,32 +124,35 @@ footer{
 .footer-item1{
     padding: 15px;
     display: flex;
+    display: -webkit-flex;
     align-items: start;
 }
 
 .footer-item2{
     padding: 15px;
     display: flex;
+    display: -webkit-flex;
     align-items: start;
 }
 
 .footer-item3{
     padding: 15px;
     display: flex;
+    display: -webkit-flex;
     align-items: start;
 }
 
 
 .footer-item1-two{
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .footer-item2-two{
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .footer-item3-two{
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .footer-item1-two h3{
@@ -147,12 +163,41 @@ footer{
 .footer-item2-two h3{
     color: hsl(236, 13%, 42%);
     font-size: 25px;
- }
+}
 
- .footer-item3-two h3{
+.footer-item3-two h3{
     color: hsl(236, 13%, 42%);
     font-size: 25px;
- }
+}
+
+.footer-item1-two h4{
+    font-size: medium;
+}
+
+.footer-item2-two h4{
+    font-size: medium;
+}
+
+.footer-item3-two h4{
+    font-size: medium;
+}
+
+.footer-item1-two p{
+    font-weight: 400;
+    font-size: small;
+}
+
+.footer-item2-two p{
+    font-weight: 400;
+    font-size: small;
+}
+
+.footer-item3-two p{
+    font-weight: 400;
+    font-size: small;
+}
+
+
 
 .attribution {
     font-size: 11px; 
