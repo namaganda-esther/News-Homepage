@@ -65,15 +65,16 @@ nav h1{
     font-size: 40px;
 }
 
-nav h4{
-
-}
 
 nav p{
     font-size: small;
     font-weight: 400;
     color: hsl(36, 100%, 99%);
     padding-bottom: 20px;
+    opacity: .6;
+}
+
+hr{
     opacity: .6;
 }
 
@@ -158,16 +159,19 @@ footer{
 .footer-item1-two h3{
    color: hsl(236, 13%, 42%);
    font-size: 25px;
+   opacity: .6;
 }
 
 .footer-item2-two h3{
     color: hsl(236, 13%, 42%);
     font-size: 25px;
+    opacity: .6;
 }
 
 .footer-item3-two h3{
     color: hsl(236, 13%, 42%);
     font-size: 25px;
+    opacity: .6;
 }
 
 .footer-item1-two h4{
@@ -185,16 +189,19 @@ footer{
 .footer-item1-two p{
     font-weight: 400;
     font-size: small;
+    opacity: .6;
 }
 
 .footer-item2-two p{
     font-weight: 400;
     font-size: small;
+    opacity: .6;
 }
 
 .footer-item3-two p{
     font-weight: 400;
     font-size: small;
+    opacity: .6;
 }
 
 
