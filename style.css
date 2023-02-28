@@ -34,6 +34,7 @@ li a{
     text-decoration: none;
 }
 
+
 section{
     display: flex;
     display: -webkit-flex;
@@ -43,7 +44,7 @@ article{
     -webkit-flex:3;
     -ms-flex: 3;
     flex: 3;
-    padding: 15px;
+    padding: 10px;
 }
 
 article img{
@@ -118,42 +119,42 @@ button a{
 footer{
     display: flex;
     display: -webkit-flex;
-    padding-top: 30px;
-    align-items: center;
+    padding-top: 20px;
+    /* align-items: center; */
+}
+
+footer div{
+    margin: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .footer-item1{
-    padding: 15px;
     display: flex;
     display: -webkit-flex;
-    align-items: start;
 }
 
 .footer-item2{
-    padding: 15px;
     display: flex;
     display: -webkit-flex;
-    align-items: start;
 }
 
 .footer-item3{
-    padding: 15px;
     display: flex;
     display: -webkit-flex;
-    align-items: start;
 }
 
 
 .footer-item1-two{
-    padding-left: 25px;
+    padding-left: 12px;
 }
 
 .footer-item2-two{
-    padding-left: 25px;
+    padding-left: 12px;
 }
 
 .footer-item3-two{
-    padding-left: 25px;
+    padding-left: 12px;
 }
 
 .footer-item1-two h3{
@@ -174,7 +175,7 @@ footer{
     opacity: .6;
 }
 
-.footer-item1-two h4{
+/* .footer-item1-two h4{
     font-size: medium;
 }
 
@@ -184,7 +185,7 @@ footer{
 
 .footer-item3-two h4{
     font-size: medium;
-}
+} */
 
 .footer-item1-two p{
     font-weight: 400;
@@ -216,9 +217,15 @@ footer{
 }
 
 
-@media (max-width: 375px) {
-    section {
-      -webkit-flex-direction: column;
-      flex-direction: column;
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 1440px) {
+    section, .article-content, footer, .footer-item1, .footer-item2, .footer-item3  {
+      flex: 100%;
+    }
+}
+
+@media (min-width: 375px) {
+    section, .article-content, footer, .footer-item1, .footer-item2, .footer-item3  {
+      flex: 100%;
     }
 }
